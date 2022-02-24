@@ -12,7 +12,7 @@ Role Variables
 --------------
 
 Variable name	Default	Description  
-kibana_version	"7.14.0"	Параметр, который определяет какой версии filebeat будет установлен
+kibana_version	"7.14.0"	Параметр, который определяет какой версии Kibana будет установлена
 
 
 Example Playbook
