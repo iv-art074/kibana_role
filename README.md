@@ -1,7 +1,7 @@
-Filebeat role
+Kibana role
 =========
 
-Роль для установки Filebeat на хостах с ОС: Debian, Ubuntu, CentOS, RHEL.
+Роль для установки Kibana на хостах с ОС: Debian, Ubuntu, CentOS, RHEL.
 
 Requirements
 ------------
@@ -12,7 +12,7 @@ Role Variables
 --------------
 
 Variable name	Default	Description  
-filebeat_version	"7.14.0"	Параметр, который определяет какой версии filebeat будет установлен
+kibana_version	"7.14.0"	Параметр, который определяет какой версии filebeat будет установлен
 
 
 Example Playbook
@@ -21,18 +21,18 @@ Example Playbook
 ```
 # requirements.yml
 ---
-- src: git@github.com:maxship/filebeat-role.git
+- src: git@github.com:iv-art074/kibana_role.git
   scm: git
-  version: "2.0.0"
-  name: filebeat-role
+  version: "1.0.0"
+  name: kibana-role
 
 # site.yml
 ---
-- name: Install Filebeat 
+- name: Install Kibana 
   hosts: all
   roles:
-    - filebeat-role
-  tags: filebeat
+    - kibana-role
+  tags: kibana
   ``` 
   
 License
